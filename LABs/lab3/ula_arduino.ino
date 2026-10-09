@@ -179,7 +179,7 @@ void executar() {
     int pc = mem[0];
     int16_t instr = mem[pc];                   // BUSCA: indexa pelo PC
 
-    byte x = (instr >> 8) & 0xF;               // DECODIFICA
+    byte x = (instr >> 8) & 0xF;               // DECODIFICA XXXX YYYY SSSS
     byte y = (instr >> 4) & 0xF;
     byte s = instr & 0xF;
 
